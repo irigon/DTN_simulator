@@ -1,0 +1,5 @@
+{"cmd":"add_mac", "mac":"00:00:00:00:00:01", "port":1, "node_name":"h1"}
+{"cmd":"add_mac", "mac":"00:00:00:00:00:02", "port":2, "node_name":"h2"}
+{"cmd":"schedule","src":"h1","dst":"h2","schedule":[{"time":"00:00:00:00", "action":"forward"}]}
+{"cmd":"schedule","src":"h2","dst":"h1","schedule":[{"time":"00:00:00:00", "action":"forward"}]}
+
