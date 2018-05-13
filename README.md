@@ -1,4 +1,4 @@
-# DTN
+# DTN\_simulator
 
 Simulator: Simulate a Disruptive tolerant network with docker containers
 Needs: 
