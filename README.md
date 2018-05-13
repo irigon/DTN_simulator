@@ -21,7 +21,7 @@ Starts the controller using the messenger plugin
   $ cd $POX\_DIR/
   ~/pox$ ./pox.py log.level --DEBUG messenger messenger.tcp\_transport scheduled\_controller
 
-A successful start looks like following:
+A successful start looks as follows:
 ![Starting pox](./simulator/pictures/starting_pox.png "Starting pox")
 
 Finally, feed switches information to the controller, create the schedule based on a contact plan
