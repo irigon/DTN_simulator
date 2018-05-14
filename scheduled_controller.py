@@ -144,7 +144,7 @@ class DTN_Controller(object):
     self.connection.send(msg)
         
   def _handle_PacketIn (self, event):
-      log.warning("Dropping packet")
+      log.debug("Dropping packet")
 
 def launch ():
   def start_switch (event):

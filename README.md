@@ -71,3 +71,8 @@ Running the app
 ```
 
 An example of a text file for feeding the controller and schedule is provided on "simulator/infos/cmds\_test.txt"
+
+The output of a simple run should look as follows:
+
+![Starting containers](./pictures/ExampleRun.png "Simple run")
+
