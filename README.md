@@ -40,7 +40,7 @@ explicit allow.
 Running for debug:
 ```
 $ cd $POXDIR/
-pox$ ./pox.py log.level --DEBUG messenger messenger.tcp\_transport scheduled\_controller
+pox$ ./pox.py log.level --DEBUG messenger messenger.tcp_transport scheduled_controller
 ```
 
 * In another window, run containernet (so far just flat topology is supported)
