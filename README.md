@@ -9,6 +9,10 @@ Requirements:
 Installation:
 After installing the requirements, download this repo under $POX/ext
 
+# Simulation diagram:
+
+![Starting pox](./pictures/DTNSimulatorDiagram.png "Simulator")
+
 # How to simulate a DTN network:
 
 A simulation uses container net to create the network topology, pox to as
