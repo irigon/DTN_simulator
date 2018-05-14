@@ -14,7 +14,7 @@ Start a topology with containernet:
 * sudo mn --topo single,3 --mac --switch ovsk --controller remote
 
 The output should look like this:
-![Starting containers](./simulator/pictures/starting_containernet.png "Starting containernet")
+![Starting containers](./pictures/starting_containernet.png "Starting containernet")
 
 
 Starts the controller using the messenger plugin
@@ -22,7 +22,7 @@ Starts the controller using the messenger plugin
   ~/pox$ ./pox.py log.level --DEBUG messenger messenger.tcp\_transport scheduled\_controller
 
 A successful start looks as follows:
-![Starting pox](./simulator/pictures/starting_pox.png "Starting pox")
+![Starting pox](./pictures/starting_pox.png "Starting pox")
 
 Finally, feed switches information to the controller, create the schedule based on a contact plan
  ubuntu@ubuntu:~/pox/ext$ python test\_client.py 
