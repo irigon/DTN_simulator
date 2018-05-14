@@ -26,7 +26,7 @@ triggered by the SDN controller.
 
 ```
 $ cd $POXDIR/
-pox$ ./pox.py messenger messenger.tcp\_transport scheduled\_controller
+pox$ ./pox.py messenger messenger.tcp_transport scheduled_controller
 ```
 
 A successful start looks as follows:
