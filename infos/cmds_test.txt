@@ -1,5 +1,5 @@
-{"cmd":"add_mac", "mac":"00:00:00:00:00:01", "port":1, "node_name":"h1"}
-{"cmd":"add_mac", "mac":"00:00:00:00:00:02", "port":2, "node_name":"h2"}
-{"cmd":"schedule","src":"h1","dst":"h2","schedule":[{"time":"00:00:00:00", "action":"forward"}]}
-{"cmd":"schedule","src":"h2","dst":"h1","schedule":[{"time":"00:00:00:00", "action":"forward"}]}
-
+{"cmd":"add_mac", "mac":"00:00:00:00:00:01", "port":1, "node_name":"h1", "ip":"10.0.0.1"}
+{"cmd":"add_mac", "mac":"00:00:00:00:00:02", "port":2, "node_name":"h2", "ip":"10.0.0.2"}
+{"cmd":"add_mac", "mac":"00:00:00:00:00:03", "port":3, "node_name":"h3", "ip":"10.0.0.3"}
+{"cmd":"schedule","src":"00:00:00:00:00:01","dst":"00:00:00:00:00:02","schedule":[{"time":"0", "action":"forward"}, {"time":"5", "action":"drop"}, {"time":"10", "action":"forward"}, {"time":"15", "action":"drop"}], "direction":"bidirectional"}
+{"cmd":"schedule","src":"00:00:00:00:00:03","dst":"00:00:00:00:00:01","schedule":[{"time":"10", "action":"forward"},{"time":"15", "action":"drop"} ], "direction":"bidirectional"}

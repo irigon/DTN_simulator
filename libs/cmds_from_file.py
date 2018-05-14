@@ -33,16 +33,17 @@ def extract_node_infos(task, node_infos):
 
 # for each line
 #   exclude empty lines and proof line for json compatibility
-def read_file(fname):
-    node_infos = {}
+def read_tasks_sequentially(fname):
     with open(fname, 'r') as f:
         for l in f:
             task = get_task(l)
             if task is not None:
-                node_infos = extract_node_infos(task, node_infos)
-    return node_infos
+                #extract_node_infos(task, node_infos)
+                yield task
+            
 
 if __name__ == "__main__":
     import sys
-    node_infos = read_file("./cmds_test.txt")
+    for t in read_tasks_sequentially("./cmds_test.txt"):
+        print(t)
     print(node_infos)
